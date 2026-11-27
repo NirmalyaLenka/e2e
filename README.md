@@ -40,6 +40,13 @@ npx e2e init
 config and an example test. The
 [quickstart](https://e2e.tester.army/docs/quickstart) covers the rest.
 
+**Before running tests:** test files, `e2e.config.ts`, custom tools, engines, and
+configured commands or services run with your operating-system permissions; the
+framework does not sandbox them. Review generated and third-party test code before
+execution. Never run tests from an untrusted pull request with secrets or write
+tokens available; use an external sandbox without secrets or write tokens. See
+[SECURITY.md](./SECURITY.md) for the full trust model.
+
 ## Packages
 
 | Package | What it does |
